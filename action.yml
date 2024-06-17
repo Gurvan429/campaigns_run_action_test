@@ -1,0 +1,19 @@
+name: 'Campaigns run'
+description: 'Run Customer MrSuricate Campaigns'
+inputs:
+  email:  
+    description: 'Email'
+    required: true
+  password:
+    description: 'Password'
+    required: true
+  campaign_ids:
+    description: 'Campagin ids (ids separated by commas)'
+    required: true
+    default: '123,125'
+outputs:
+  result:
+    description: 'bulks ids (campaign instances ids launched)'
+runs:
+  using: 'node20'
+  main: 'index.js'
