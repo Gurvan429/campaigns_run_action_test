@@ -9,7 +9,7 @@ async function main() {
         var email = core.getInput('email');
         var password = core.getInput('password');
         var campaignIds = core.getInput('campaign_ids');
-
+// test comment
         if (!campaignIds) {
             throw new Error('Missing campaignIds');
         }
