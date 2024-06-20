@@ -9,7 +9,7 @@ async function main() {
         var email = core.getInput('email');
         var password = core.getInput('password');
         var campaignIds = core.getInput('campaign_ids');
-// test comment1
+// test comment
         if (!campaignIds) {
             throw new Error('Missing campaignIds');
         }
@@ -32,7 +32,7 @@ async function main() {
 
         // TODO Optimize this using parallelling promises
         for (var campaignId of campaignIds.split(',')) {
-            var response3 = await axios.post(remoteHost+'/campaigns/'+campaignId+'/play', {
+            var response3 = await axios.post(remoteHost+'/api-v2/campaigns/'+campaignId+'/play', {
             }, {
                 headers: {
                     'Authorization': 'Bearer '+token
@@ -42,7 +42,6 @@ async function main() {
         }
         core.setOutput("result", JSON.stringify(result));
     } catch (error) {
-        console.log(email, password, campaignIds);
         core.setFailed(error.message);
     }
 };
