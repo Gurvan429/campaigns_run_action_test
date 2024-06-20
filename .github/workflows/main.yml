@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Campaigns run
         id: campaigns_run
-        uses: mbouchotsuricate/campaigns_run_action@1.0.1
+        uses: mbouchotsuricate/campaigns_run_action@1.0.2
         with:
           email: ${{ secrets.EMAIL }}
           password: ${{ secrets.PASSWORD }}
