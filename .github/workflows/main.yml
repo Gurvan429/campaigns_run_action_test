@@ -9,6 +9,6 @@ jobs:
         id: campaigns_run
         uses: mbouchotsuricate/campaigns_run_action@1.0.0
         with:
-          username: ${{ secrets.USERNAME }}
+          email: ${{ secrets.EMAIL }}
           password: ${{ secrets.PASSWORD }}
           campaign_ids: ${{ env.CAMPAIGN_IDS }}
