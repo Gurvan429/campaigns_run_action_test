@@ -27,7 +27,7 @@ An array of bulk ids.
 ```yaml
 uses: mbouchotsuricate/campaigns_run_action@1.0.0
 with:
-  username: 'xxx'
+  username: 'xxx@xxx.com'
   password: 'xxx'
   campaign_ids: '123,568'
 ```
