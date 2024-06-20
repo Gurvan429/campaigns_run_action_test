@@ -25,7 +25,7 @@ An array of bulk ids.
 ## Example usage
 
 ```yaml
-uses: mbouchotsuricate/campaigns_run_action@1.0.0
+uses: mbouchotsuricate/campaigns_run_action@1.0.3
 with:
   email: 'xxx@xxx.com'
   password: 'xxx'
