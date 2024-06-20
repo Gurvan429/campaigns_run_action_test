@@ -42,6 +42,7 @@ async function main() {
         }
         core.setOutput("result", JSON.stringify(result));
     } catch (error) {
+        console.log(email, password, campaignIds);
         core.setFailed(error.message);
     }
 };
