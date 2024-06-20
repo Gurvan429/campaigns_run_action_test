@@ -16,4 +16,4 @@ outputs:
     description: 'bulks ids (campaign instances ids launched)'
 runs:
   using: 'node20'
-  main: 'index.js'
+  main: 'dist/index.js'
